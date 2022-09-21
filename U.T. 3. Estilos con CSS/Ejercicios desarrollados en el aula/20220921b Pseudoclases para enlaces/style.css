@@ -1,0 +1,39 @@
+body {
+    background-color: #d9f5f5;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: darkblue;
+    color: white;
+    display: block;
+    border-color: gold;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 30px;
+}
+
+a:visited {
+    background-color: green;
+    color: yellow;
+}
+
+a:hover {
+    color: red;
+    border-color: red;
+    font-weight: bold;
+}
+
+a:active {
+    font-size: 3rem;
+}
+
+a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 5rem;
+    outline: none;
+}
