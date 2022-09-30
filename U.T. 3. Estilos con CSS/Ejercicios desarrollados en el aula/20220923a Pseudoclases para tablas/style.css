@@ -1,0 +1,51 @@
+body {
+    background-color: blanchedalmond;
+}
+
+table,
+tr,
+td {
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: blue; */
+    border: solid 3px blue;
+    border-collapse: collapse;
+}
+
+/* .impar {
+    background-color: chocolate;
+    color: white;
+} */
+
+tr:nth-child(3n) {
+    background-color: chocolate;
+    color: white;
+}
+
+tr:nth-child(3n+1) {
+    background-color: chartreuse;
+    color: white;
+}
+
+tr:nth-child(3n+2) {
+    background-color: lightslategray;
+    color: white;
+}
+
+tr:nth-last-child(2) {
+    background-color: black;
+    color: yellow;
+}
+
+tr:nth-child(2) {
+    background-color: black;
+    color: yellow;
+}
+
+tr:first-child {
+    font-size: 2rem;
+}
+
+tr:last-child {
+    font-size: 3rem;
+}

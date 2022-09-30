@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+    border: solid 10px black;
+}
+
+h1,
+h2,
+div,
+span,
+b,
+h3 {
+    border: solid 5px red;
+}
+
+table {
+    margin: 20px 0;
+    /* display: table; */
+}
+
+table,
+tr,
+td {
+    border: solid 2px blue;
+    border-collapse: collapse;
+}
+
+#ultimo-span {
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+}

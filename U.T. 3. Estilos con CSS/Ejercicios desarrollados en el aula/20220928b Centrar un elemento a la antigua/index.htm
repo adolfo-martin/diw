@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .outer-box {
+            background-color: darkblue;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        .inner-box {
+            background-color: gold;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .orange-box {
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            border-radius: 50%;
+            border: solid 10px #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+
+    <div class="orange-box"></div>
+</body>
+
+</html>
