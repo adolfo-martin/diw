@@ -1,0 +1,47 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    --color-fondo: #f8a3a3;
+    --color-texto: #400303;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    /* min-height: 100vh; */
+}
+
+div.capa-fija {
+    background-color: red;
+    border: solid 3px white;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 220px;
+    height: 100px;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.capa-absoluta {
+    background-color: green;
+    border: solid 5px orange;
+    position: absolute;
+    width: 250px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2000;
+}
+
+.capa-relativa {
+    background-color: blue;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
