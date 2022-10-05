@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.box {
+    float: left;
+}
+
+.box-red {
+    background-color: red;
+    width: 50%;
+    height: calc(100% / 4);
+}
+
+.box-blue {
+    background-color: blue;
+    width: 50%;
+    height: calc(100% / 4);
+}
+
+.box-yellow {
+    background-color: yellow;
+    width: 100%;
+    height: calc(100% / 4);
+}
+
+.row-three {
+    background-color: pink;
+    width: 100%;
+    height: calc(100% / 4);
+}
+
+.column-one {
+    width: 50%;
+    height: 100%;
+    background-color: chocolate;
+    float: left;
+}
+
+.box-gray {
+    background-color: grey;
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+.box-orange {
+    background-color: orange;
+    width: 100%;
+    height: calc((100% / 3) * 2);
+}
+
+.box-cyan {
+    background-color: cyan;
+    width: 100%;
+    height: calc(100% / 4);
+}
+
+.column-two {
+    width: 50%;
+    height: 100%;
+    background-color: chocolate;
+    float: left;
+}
+
+.box-green {
+    background-color: green;
+    width: 50%;
+    height: calc((100% / 3) * 2);
+    float: left;
+}
+
+.box-brown {
+    background-color: brown;
+    width: 50%;
+    height: calc((100% / 3) * 2);
+    float: left;
+}
+
+.box-black {
+    background-color: black;
+    width: 50%;
+    height: calc(100% / 3);
+    float: left;
+}
+
+.box-olive {
+    background-color: olive;
+    width: 50%;
+    height: calc(100% / 3);
+    float: left;
+}

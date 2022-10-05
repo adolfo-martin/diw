@@ -1,0 +1,60 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+    min-height: 100vh;
+    max-width: 1000px;
+    border: solid 5px black;
+    margin: 0 auto;
+}
+
+div {
+    border: solid 1px red;
+    width: 300px;
+    height: 100px;
+    float: left;
+}
+
+#tDivLayerRed {
+    background-color: Red;
+}
+
+#tDivLayerGreen {
+    background-color: Green;
+}
+
+#tDivLayerBlue {
+    background-color: Blue;
+    clear: left;
+}
+
+#tDivLayerYellow {
+    background-color: Yellow;
+}
+
+#tDivLayerCyan {
+    background-color: Cyan;
+}
+
+#tDivLayerMagenta {
+    background-color: Magenta;
+    height: 300px;
+}
+
+.box-gold {
+    background-color: gold;
+}
+
+body>:nth-child(10) {
+    background-color: black;
+    clear: left;
+}
