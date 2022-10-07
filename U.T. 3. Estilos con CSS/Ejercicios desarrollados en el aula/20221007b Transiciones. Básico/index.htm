@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            transition-property: width, height, background-color;
+            transition-duration: 1s, 5000ms, 10000ms;
+            transition-timing-function: linear;
+            transition-delay: 1s, 2s, 3000ms;
+        }
+
+        .box:hover {
+            width: 600px;
+            height: 600px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">a</div>
+    <b>hola</b>
+</body>
+
+</html>
