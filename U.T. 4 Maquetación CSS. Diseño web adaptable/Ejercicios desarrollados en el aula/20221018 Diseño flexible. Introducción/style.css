@@ -1,0 +1,57 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    --color-background: #f5cece;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+div>div {
+    border: solid 1px red;
+    flex-basis: 200px;
+}
+
+.container-landscape {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: row;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+    align-items: center;
+    height: 30%;
+}
+
+.box1 {
+    /* width: 100px; */
+    /* flex-basis: 1; */
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+}
+
+.box2 {
+    /* align-self: flex-start; */
+    /* flex-grow: 2; */
+    flex-shrink: 4;
+}
+
+
+/* .box3 {
+    order: 1;
+
+
+
+.box5 {
+    align-self: flex-end;
+}
+
+*/

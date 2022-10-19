@@ -1,0 +1,87 @@
+:root {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    --color-header: red;
+    --color-nav: green;
+    --color-main: blue;
+    --color-footer: yellow;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    width: 100px;
+    /* width of the entire scrollbar */
+}
+
+header {
+    background-color: var(--color-header);
+    font-size: 3rem;
+}
+
+nav {
+    background-color: var(--color-nav);
+}
+
+main {
+    background-color: var(--color-main);
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 1px;
+}
+
+main::-webkit-scrollbar,
+main::-webkit-scrollbar-track {
+    width: 10px;
+    background: orange;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 5px;
+    border: 3px solid orange;
+}
+
+footer {
+    background-color: var(--color-footer);
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav li {
+    flex-basis: 0;
+    flex-grow: 1;
+    border: solid 2px white;
+    display: flex;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: green;
+}
