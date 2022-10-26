@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --color-dark: #0f0f7e;
+            --color-light: #b6b6f5;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: var(--color-light);
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+        }
+
+        li {
+            flex-grow: 1;
+            background-color: var(--color-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-light);
+        }
+
+        main,
+        aside {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        aside {
+            writing-mode: vertical-lr;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Figuras</a>
+            </li>
+            <li>
+                <a href="">Reglas del juego</a>
+            </li>
+            <li>
+                <a href="">Puntuación</a>
+            </li>
+            <li>
+                <a href="">Torneo mundial</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        Figuras
+    </main>
+
+    <aside>
+        Participa y gana fabulosos premios
+    </aside>
+</body>
+
+</html>
