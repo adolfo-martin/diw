@@ -1,0 +1,30 @@
+:root {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+input[type="radio"] {
+    appearance: none;
+}
+
+input[type="radio"]:checked::before {
+    content: '👍'
+}
+
+input[type="radio"]:not(:checked)::after {
+    content: '👎'
+}
