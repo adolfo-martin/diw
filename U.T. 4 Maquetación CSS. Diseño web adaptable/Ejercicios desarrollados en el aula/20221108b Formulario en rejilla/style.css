@@ -1,0 +1,54 @@
+:root {
+    --color-fondo: rgb(101, 4, 4);
+    --color-formulario: rgb(232, 232, 165);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--color-fondo);
+}
+
+form {
+    padding: 1rem;
+    background-color: var(--color-formulario);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 0.5rem;
+    border-radius: 15px;
+    box-shadow: 25px 25px 100px 25px var(--color-formulario);
+}
+
+form>label {
+    text-align: right;
+}
+
+.contenedor-telefonos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+}
+
+.contenedor-telefonos>label {
+    text-align: right;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea,
+input,
+select {
+    outline: none;
+    border: none;
+    accent-color: red;
+}
