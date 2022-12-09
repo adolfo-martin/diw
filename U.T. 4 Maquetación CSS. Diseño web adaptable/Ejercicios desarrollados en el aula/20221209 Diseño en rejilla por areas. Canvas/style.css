@@ -1,0 +1,106 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./wallpaper.png);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "description               context               final-product         final-product  cronogram-grouping    sequence-of-activities"
+    "description               competences           final-product         final-product  resources-tools-tic   sequence-of-activities"
+    "standars-of-learning      standars-of-learning  standars-of-learning  evaluation     evaluation            evaluation"
+    ;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+article {
+  background-color: #ffffffcc;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.article--horizontal {
+  display: grid;
+  grid-template-areas: 
+    "title      plus"
+    "paragraph  plus"
+  ;
+}
+
+.article__title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  grid-area: title;
+}
+
+.article__paragraph {
+  flex-grow: 1;
+  grid-area: paragraph
+}
+
+.article__plus {
+  background-color: darkblue;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem -1rem -1rem -1rem;
+  grid-area: plus;
+}
+
+.description {
+  grid-area: description;
+}
+
+.context {
+  grid-area: context;
+}
+
+.final-product {
+  grid-area: final-product;
+}
+
+.cronogram-grouping {
+  grid-area: cronogram-grouping;
+}
+
+.sequence-of-activities {
+  grid-area: sequence-of-activities;
+}
+
+.competences {
+  grid-area: competences;
+}
+
+.resources-tools-tic {
+  grid-area: resources-tools-tic;
+}
+
+.standars-of-learning {
+  grid-area: standars-of-learning;
+}
+
+.evaluation {
+  grid-area: evaluation;
+}

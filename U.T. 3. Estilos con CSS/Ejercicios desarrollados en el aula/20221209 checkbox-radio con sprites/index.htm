@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            font-size: 40px;
+            --sprite-width: calc(700px / 4);
+            --sprite-height: 202px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: cadetblue;
+            padding: 1rem;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            border: solid 1px red;
+            width: var(--sprite-width);
+            height: var(--sprite-height);
+            transform: scale(0.1);
+            background-image: url(./radio-checkbox.jpeg);
+            background-repeat: no-repeat;
+            background-position-x: calc(var(--sprite-width) * -0);
+            background-position-y: 0px;
+        }
+
+        input[type="checkbox"]:checked {
+            background-position-x: calc(var(--sprite-width) * -1);
+            background-position-y: 0;
+        }
+
+        input[type="checkbox"]:checked+label {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="tChkPlaya" checked>
+        <label for="tChkPlaya">Playa</label>
+
+        <input type="checkbox" id="tChkMontaña">
+        <label for="tChkMontaña">Montaña</label>
+    </div>
+</body>
+
+</html>
