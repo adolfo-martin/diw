@@ -1,0 +1,51 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.pelota {
+    width: 200px;
+    position: absolute;
+}
+
+.pelota-1 {
+    top: 50%;
+    animation-name: movimiento-1;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+.pelota-2 {
+    animation-name: movimiento-2;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.animacion-parada {
+    animation-play-state: paused;
+}
+
+@keyframes movimiento-1 {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: calc(50% - 200px);
+    }
+}
+
+@keyframes movimiento-2 {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+
+    100% {
+        left: 90%;
+        top: 90%;
+    }
+}

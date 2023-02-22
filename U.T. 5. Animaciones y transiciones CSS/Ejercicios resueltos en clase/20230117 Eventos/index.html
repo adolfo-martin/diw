@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            animation: movimiento 2s linear 0s 10 normal both;
+        }
+
+        @keyframes movimiento {
+            0% {
+                top: 10%;
+                left: 10%;
+            }
+
+            30% {
+                top: 10%;
+                left: 90%;
+            }
+
+            40% {
+                left: 90%;
+                top: 90%;
+            }
+
+            60% {
+                left: 20%;
+                top: 90%;
+            }
+
+            100% {
+                top: 10%;
+                left: 10%;
+            }
+        }
+    </style>
+
+    <script type="module">
+        let contador = 0;
+
+        const nCuadrado = document.querySelector('.cuadrado');
+        nCuadrado.addEventListener('animationstart', e => console.log('Iniciando'));
+        nCuadrado.addEventListener('animationend', e => console.log('Finalizando'));
+        nCuadrado.addEventListener('animationiteration', e => {
+            console.log('Repitiendo', contador++);
+            console.assert(contador !== 5, 'Ya llevo cinco');
+            if (contador === 5) console.log('Ya llevo cinco');
+            if (contador === 5) document.body.style.setProperty('background-color', 'blue');
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="cuadrado"></div>
+</body>
+
+</html>

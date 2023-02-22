@@ -1,0 +1,60 @@
+:root {
+    font-size: 50px;
+}
+
+body {
+    background-color: green;
+    overflow: hidden;
+}
+
+button {
+    font-size: inherit;
+}
+
+.pelota {
+    width: 100px;
+    position: absolute;
+    animation: movimiento-pelota 3s linear 0s infinite normal both;
+}
+
+/* .stopped {
+    animation-play-state: paused;
+} */
+
+#tChkChangeStatus {
+    display: none;
+}
+
+#tChkChangeStatus:checked+img {
+    animation-play-state: running;
+}
+
+#tChkChangeStatus:not(:checked)+img {
+    animation-play-state: paused;
+}
+
+
+
+@keyframes movimiento-pelota {
+    0% {
+        left: 10%;
+        top: 10%;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        left: 90%;
+        top: 30%;
+    }
+
+    50% {
+        left: 30%;
+        top: 90%;
+    }
+
+    100% {
+        left: 10%;
+        top: 10%;
+        transform: rotate(360deg);
+    }
+}

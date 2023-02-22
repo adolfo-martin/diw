@@ -1,0 +1,80 @@
+*,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #9ef6f6;
+    /* display: grid;
+    place-content: center; */
+    position: absolute;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    border: solid 10px orange;
+    border-radius: 50%;
+    position: relative;
+    animation-name: move, rotate, grow;
+    animation-duration: 3s, 1s, 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1, infinite, 1;
+    animation-fill-mode: both, none, none;
+}
+
+.spinner::before {
+    content: "";
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    animation: change-color 500ms linear 0s infinite alternate both;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+        top: 0;
+    }
+
+    to {
+        left: 500px;
+        top: 500px;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes change-color {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
