@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="2xl:flex 2xl:justify-center">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="h-screen bg-zinc-200 flex flex-col 2xl:w-[1920px]">
+    <header class="bg-zinc-700 text-orange-500 text-center text-5xl font-bold pb-2
+                lg:flex lg:flex-col">
+        <nav class="lg:order-2 lg:w-full">
+            <a href="#" class="z-50 absolute top-0 left-0 lg:hidden">
+                <img src="./images/tailwind_logo.png" class="w-[1em]">
+            </a>
+
+            <ul class="hidden absolute top-0 bg-zinc-500/75 h-full w-full p-[1.5em] md:w-fit
+                        lg:static lg:w-full lg:h-fit lg:bg-transparent lg:flex lg:flex-row lg:justify-around lg:py-5">
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
+            </ul>
+        </nav>
+
+        <div>Encabezado</div>
+    </header>
+
+    <main class="grow text-justify text-2xl px-1 pt-2 2xl:text-4xl">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quia, possimus aut ullam distinctio amet vel
+            mollitia saepe voluptatem rerum esse, placeat doloribus, modi aspernatur nam at dicta. Eaque est obcaecati
+            quibusdam animi cum consequuntur ducimus expedita doloremque! Id odio tenetur suscipit nisi necessitatibus
+            obcaecati ex officiis quidem quasi placeat amet deserunt a sapiente quas eos qui praesentium, molestias
+            repudiandae nostrum earum exercitationem corrupti ut tempore consectetur? Sunt debitis ipsum provident.
+            Praesentium fugit nam assumenda laboriosam eveniet voluptate nisi veritatis quisquam ipsum sed! Voluptas qui
+            beatae, ratione consectetur quidem magni vero accusantium, blanditiis quam facere saepe vitae. Veritatis cum
+            dolorem, inventore autem voluptate commodi, consequatur sapiente quaerat iusto, iste iure officiis qui
+            dolore repellendus corrupti cupiditate eveniet natus distinctio omnis adipisci? Recusandae et, eius eaque
+            officiis quidem eveniet tempore saepe accusantium earum quia necessitatibus facere. Sint expedita dicta
+            earum dolor possimus facilis sit suscipit voluptates sed, illo tempora eos rerum? Iste dolorum, itaque at
+            iusto molestiae architecto tenetur cum voluptates porro assumenda illum voluptatum ullam harum consequuntur
+            expedita. Fuga sapiente asperiores optio tenetur deleniti necessitatibus hic in nisi magnam assumenda,
+            similique maiores accusamus dolor illum id ipsam. Laborum quas dolorem sunt aliquam temporibus quaerat
+            officia vel neque. Corporis possimus dicta repudiandae eum fugiat earum ducimus nostrum odit veritatis iusto
+            quam tempora optio porro accusantium, numquam facilis facere ad! Odit reiciendis cum corrupti harum deserunt
+            ducimus beatae natus maiores unde rerum, laborum repellendus accusantium, corporis, nesciunt magnam! Beatae
+            exercitationem fugit voluptatem deleniti eveniet, doloribus tenetur? Sequi placeat autem hic vel
+            consequuntur tempora facilis at in magnam! Ut neque, dolor laboriosam repellendus voluptatibus, maiores
+            facilis dolorum debitis eius dignissimos, natus sequi? Natus aliquid velit aperiam repellat ipsa quasi est
+            delectus id ut blanditiis odio at fugit enim doloremque, debitis inventore veritatis, vel quo? In facere
+            beatae natus consequuntur. Odio dolorem ratione necessitatibus!</p>
+    </main>
+
+    <aside class="hidden">Lateral</aside>
+
+    <footer class="text-center bg-zinc-700 text-orange-500">© Adolfo Martín 2023</footer>
+
+    <script>
+        document.querySelector('img').addEventListener('click', e => {
+            document.querySelector('ul').classList.toggle('hidden');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$gray-50 : #FFF3E0;
+$gray-100: #FFE0B2;
+$gray-200: #FFCC80;
+$gray-300: #FFB74D;
+$gray-400: #FFA726;
+$gray-500: #FF9800;
+$gray-600: #FB8C00;
+$gray-700: #F57C00;
+$gray-800: #EF6C00;
+$gray-900: #E65100;
+
+$body-bg: $gray-200 !important;
+
+$table-color: $gray-200 !important;
+$table-striped-bg: $gray-400 !important;
+$table-hover-bg: rgba($gray-900, $table-hover-bg-factor) !important;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
